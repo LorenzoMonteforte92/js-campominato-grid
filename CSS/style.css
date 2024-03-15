@@ -12,6 +12,10 @@
     GENERAL 
 -------------*/
 
+body{
+    font-family: "Madimi One", sans-serif;
+}
+
 img{
     width: 100%;
 }
@@ -25,6 +29,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #083B4C;
+}
+
+h1{
+    color: white;
+    letter-spacing: 2px;
 }
 
 .header-logo{
@@ -54,7 +64,8 @@ header{
 -------------*/
 
 main{
-    background-color: #7FFFD4;
+    background-color: #0c6481;
+    padding: 30px 0;
 }
 
 #container{
@@ -75,9 +86,10 @@ main{
     justify-content: center;
     align-items: center;
     border: solid 1px black;
+    color: black;
 }
 
 .click-cell{
-    background-color: lightblue;
+    background-color: coral;
 }
 

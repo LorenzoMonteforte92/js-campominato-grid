@@ -12,10 +12,18 @@ startBtn.addEventListener(`click`, function(){
     //selezionare il contenitore
     let boxContainer = document.querySelector(`#container`);
     //stamparci dentro gli elementi usando una funzione
+    let newSquare
     for(let i = 1; i <= 100; i++){
-         let newSquare = generateSquare (i);
+         newSquare = generateSquare (i);
          boxContainer.append(newSquare);
+         newSquare.addEventListener(`click`, function(){
+            this.classList.add(`click-cell`)
+            console.log(i)
+        }, {once : true})
     }
+
+    
+
 }, {once : true})
 
 // ----------------
