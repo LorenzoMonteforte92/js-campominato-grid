@@ -1,8 +1,45 @@
+/*-----------
+    RESET 
+-------------*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*-----------
+    GENERAL 
+-------------*/
+
+img{
+    width: 100%;
+}
+
+/*-----------
+    HEADER 
+-------------*/
+
+header{
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    width: 50px;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*-----------
+    MAIN
+-------------*/
 
 main{
     background-color: #7FFFD4;
@@ -31,3 +68,4 @@ main{
 .click-cell{
     background-color: lightblue;
 }
+
