@@ -37,6 +37,17 @@ header{
     gap: 10px;
 }
 
+.btn{
+    border: none;
+    border-radius: 20px;
+    background-color: lightskyblue;
+    color: white;
+    font-weight: bold;
+    padding: 8px 25px;
+    letter-spacing: 2px;
+    font-size: large;
+}
+
 /*-----------
     MAIN
 -------------*/
