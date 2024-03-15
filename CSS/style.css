@@ -4,8 +4,30 @@
     box-sizing: border-box;
 }
 
+main{
+    background-color: #7FFFD4;
+}
+
 #container{
-    width: 800px;
-    height: 800px;
-    background-color: transparent ;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    border: solid 1px darkblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.box{
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.click-cell{
+    background-color: lightblue;
 }
