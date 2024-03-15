@@ -40,12 +40,13 @@ header{
 .btn{
     border: none;
     border-radius: 20px;
-    background-color: lightskyblue;
+    background-color: #0D6EFD;
     color: white;
     font-weight: bold;
     padding: 8px 25px;
     letter-spacing: 2px;
     font-size: large;
+    cursor: pointer;
 }
 
 /*-----------
