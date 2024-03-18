@@ -28,6 +28,7 @@ startBtn.addEventListener(`click`, function(){
     let newSquare
     for(let i = 1; i <= 81; i++){
          newSquare = generateSquare (i);
+         newSquare.classList.add(`hard-box`);
          boxContainer.append(newSquare);
          newSquare.addEventListener(`click`, function(){
             this.classList.add(`click-cell`)
@@ -39,6 +40,7 @@ startBtn.addEventListener(`click`, function(){
     let newSquare
     for(let i = 1; i <= 49; i++){
          newSquare = generateSquare (i);
+         newSquare.classList.add(`crazy-box`);
          boxContainer.append(newSquare);
          newSquare.addEventListener(`click`, function(){
             this.classList.add(`click-cell`)

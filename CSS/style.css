@@ -93,3 +93,12 @@ main{
     background-color: coral;
 }
 
+.hard-box{
+    height: calc(100% / 9);
+    width: calc(100% / 9);
+}
+
+.crazy-box{
+    height: calc(100% / 7);
+    width: calc(100% / 7);
+}
