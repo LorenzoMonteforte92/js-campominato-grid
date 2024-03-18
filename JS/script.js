@@ -8,7 +8,9 @@
 //metterlo in attesa di un evento click
 let startBtn = document.querySelector(`#btn`);
 startBtn.addEventListener(`click`, function(){
-    //generare una griglia di 100 elementi con numeri da 1 a 100
+    let selectLevel = document.querySelector(`#livello`).value;
+    if(selectLevel === `easy`) {
+        //generare una griglia di 100 elementi con numeri da 1 a 100
     //selezionare il contenitore
     let boxContainer = document.querySelector(`#container`);
     //stamparci dentro gli elementi usando una funzione
@@ -21,10 +23,35 @@ startBtn.addEventListener(`click`, function(){
             console.log(i)
         }, {once : true})
     }
-
+} else if (selectLevel === `hard`){
+    let boxContainer = document.querySelector(`#container`);
+    let newSquare
+    for(let i = 1; i <= 81; i++){
+         newSquare = generateSquare (i);
+         boxContainer.append(newSquare);
+         newSquare.addEventListener(`click`, function(){
+            this.classList.add(`click-cell`)
+            console.log(i)
+        }, {once : true})
+    }
+} else if (selectLevel === `crazy`){
+    let boxContainer = document.querySelector(`#container`);
+    let newSquare
+    for(let i = 1; i <= 49; i++){
+         newSquare = generateSquare (i);
+         boxContainer.append(newSquare);
+         newSquare.addEventListener(`click`, function(){
+            this.classList.add(`click-cell`)
+            console.log(i)
+        }, {once : true})
+    }
+}
     
-
 }, {once : true})
+
+
+// bonus creare diversi livelli di dificoltà
+//se il valore del select è easy, hard, crazy fai partire scenari diversi
 
 // ----------------
 //     FUNCTIONS
